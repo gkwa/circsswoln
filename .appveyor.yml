@@ -7,6 +7,7 @@ on_finish:
 
 image: Ubuntu2004
 install:
+- sudo apt-get -qqy install python3-pip
 - sudo update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 1
 - sudo pip install --quiet tox-docker
 test_script:
