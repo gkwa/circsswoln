@@ -11,5 +11,5 @@ install:
 - sudo apt-get -qqy install python3-pip
 - sudo /bin/pip3 install --quiet tox-docker
 test_script:
-- echo hello
+- tox
 build: off
