@@ -8,11 +8,7 @@ on_finish:
 image: Ubuntu2004
 install:
 - sudo apt -qqy update
-- sudo apt -qy install python3.8-venv
-- python3 -mvenv .venv
-- source .venv/bin/activate
-- pip tox-docker
-- make install
+- pip install --quiet tox-docker
 test_script:
-- source .venv/bin/activate && tox
+- echo hello
 build: off
