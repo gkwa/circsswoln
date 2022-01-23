@@ -8,7 +8,7 @@ on_finish:
 image: Ubuntu2004
 install:
 - sudo apt -qqy update
-- pip install --quiet tox-docker
+- sudo pip3 install --quiet tox-docker
 test_script:
 - echo hello
 build: off
