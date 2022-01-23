@@ -12,5 +12,6 @@ install:
 - python3 -mvenv .venv
 - source .venv/bin/activate && pip install --quiet tox-docker
 test_script:
+- sudo mkdir -p /my/own/datadir && chmdo -R a+rwx /my/own/datadir
 - source .venv/bin/activate && tox
 build: off
