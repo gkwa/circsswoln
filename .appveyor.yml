@@ -9,8 +9,7 @@ image: Ubuntu2004
 install:
 - sudo apt-get -qqy update
 - sudo apt-get -qqy install python3-pip
-- sudo update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 1
-- sudo pip install --quiet tox-docker
+- sudo pip3 install --quiet tox-docker
 test_script:
 - echo hello
 build: off
